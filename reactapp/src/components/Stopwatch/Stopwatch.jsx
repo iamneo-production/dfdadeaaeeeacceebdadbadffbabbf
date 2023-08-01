@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 //import "/home/coder/project/workspace/reactapp/src/App.css";
-
+import "./Stopwatch.css";
 export default function Stopwatch(props) {
   const [time, setTime] = useState(0);
   const [isActive, setIsActive] = useState(false);
