@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "/home/coder/project/workspace/reactapp/src/App.css";
+//import "/home/coder/project/workspace/reactapp/src/App.css";
 
 export default function Stopwatch(props) {
   const [time, setTime] = useState(0);
@@ -43,7 +43,7 @@ export default function Stopwatch(props) {
   };
 
   return (
-    <section id="stopwatch">
+    <section className="stop-watch">
       <div className="inner">
         <h1> React Stopwatch </h1>
 
