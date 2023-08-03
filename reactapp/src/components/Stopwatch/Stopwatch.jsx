@@ -35,12 +35,12 @@ function Stopwatch() {
     setIsActive(false);
   };
 
-  const formatTime = (timeInSeconds) => {
-    const hours = Math.floor(timeInSeconds / 3600);
-    const minutes = Math.floor((timeInSeconds - (hours * 3600)) / 60);
-    const seconds = timeInSeconds - (hours * 3600) - (minutes * 60);
-    return ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')};
-  }
+  const formatTime = (time) => {
+    const hours = `0${Math.floor(time / 360000)}`.slice(-2);
+    const minutes = `0${Math.floor(time / 60000) % 60}`.slice(-2);
+    const seconds = `0${Math.floor(time / 1000) % 60}`.slice(-2);
+    return `${hours}:${minutes}:${seconds}`;
+  };
 
   return (
     <div style={{display: "flex", flexDirection: "column", alignItems: "center", border: "2px solid #00BFFF", padding: "20px"}}>
