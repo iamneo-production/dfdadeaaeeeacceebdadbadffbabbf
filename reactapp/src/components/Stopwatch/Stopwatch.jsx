@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef, React } from "react";
-//import '.src/App.css';
+import { useState, useRef, React } from "react";
+import './App.css';
 
 
 export default function Stopwatch(props){
